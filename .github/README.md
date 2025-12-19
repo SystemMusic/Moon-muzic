@@ -19,7 +19,7 @@
 <summary><b>─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─</b></summary>
 
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/System7860/Miss-MUSIC-"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https:https://github.com/Moon-Muzic/MoonMuzic,-"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 </details>
 </h3>
 <h3 align="center">
@@ -28,19 +28,19 @@
 
 
 
-<h3 align="center">
+<h3 align="center">me aap n
 <details>
 <summary><b>─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─</b></summary>
 
     
-- Get your [Necessary Variables](https://github.com/TeamEspro/EsproMusicBot/blob/master/sample.env)
+- Get your [Necessary Variables](https://github.com/Moon-Muzic/MoonMuzic/blob/master/sample.env)
 
 - Upgrade and Update by :
 
 `sudo apt-get update && sudo apt-get upgrade -y`
 
 - Install Ffmpeg & Python by :
-
+xm
 `sudo apt-get install python3-pip ffmpeg -y`
 
 - Install pip by :
@@ -51,7 +51,7 @@
 
 `curl -fssL https://deb.nodesource.com/setup_19.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 
-- Clone the repository by :
+- Clone the repositobury by :
 
 `git clone https://github.com/TeamEspro/EsproMusicBot && cd EsproMusicBot`
 
@@ -135,5 +135,6 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 </details>
 
 - <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴛᴇᴀᴍ ʏᴜᴋᴋɪ](https://github.com/TeamYukki) ғᴏʀ [ʏᴜᴋᴋɪ ᴍᴜsɪᴄ ʙᴏᴛ](https://github.com/TeamYukki/YukkiMusicBot)_ </b>
+
 
 
