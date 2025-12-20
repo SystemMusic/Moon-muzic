@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import YouTube, app
-from EsproMusic.core.call import Loy
-from EsproMusic.misc import db
-from EsproMusic.utils import AdminRightsCheck, seconds_to_min
-from EsproMusic.utils.inline import close_markup
+from MoonMuzic import YouTube, app
+from MoonMuzic.core.call import Loy
+from MoonMuzicc.misc import db
+from MoonMuzic.utils import AdminRightsCheck, seconds_to_min
+from MoonMuzic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -73,3 +73,4 @@ async def seek_comm(cli, message: Message, _, chat_id):
         text=_["admin_25"].format(seconds_to_min(to_seek), message.from_user.mention),
         reply_markup=close_markup(_),
     )
+
