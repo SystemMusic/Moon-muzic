@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.database import add_off, add_on
-from EsproMusic.utils.decorators.language import language
+from MoonMuzic import app
+from MoonMuzic.misc import SUDOERS
+from MoonMuzic.utils.database import add_off, add_on
+from MoonMuzic.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
@@ -27,3 +27,4 @@ async def logger(client, message, _):
     await message.reply_document("cookies/logs.csv")
     await message.reply_text("Please check given file to cookies file choosing logs...")
     
+
