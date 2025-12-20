@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.database import add_sudo, remove_sudo
-from EsproMusic.utils.decorators.language import language
-from EsproMusic.utils.extraction import extract_user
-from EsproMusic.utils.inline import close_markup
+from MoonMuzic import app
+from MoonMuzic.misc import SUDOERS
+from MoonMuzic.utils.database import add_sudo, remove_sudo
+from MoonMuzic.utils.decorators.language import language
+from MoonMuzic.utils.extraction import extract_user
+from MoonMuzic.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
@@ -69,3 +69,4 @@ async def sudoers_list(client, message: Message, _):
         await message.reply_text(_["sudo_7"])
     else:
         await message.reply_text(text, reply_markup=close_markup(_))
+
