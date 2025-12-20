@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from EsproMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from EsproMusic.core.call import Loy
-from EsproMusic.utils import seconds_to_min, time_to_seconds
-from EsproMusic.utils.channelplay import get_channeplayCB
-from EsproMusic.utils.decorators.language import languageCB
-from EsproMusic.utils.decorators.play import PlayWrapper
-from EsproMusic.utils.formatters import formats
-from EsproMusic.utils.inline import (
+from MoonMuzic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from MoonMuzic.core.call import Loy
+from MoonMuzic.utils import seconds_to_min, time_to_seconds
+from MoonMuzic.utils.channelplay import get_channeplayCB
+from MoonMuzic.utils.decorators.language import languageCB
+from MoonMuzic.utils.decorators.play import PlayWrapper
+from MoonMuzic.utils.formatters import formats
+from MoonMuzic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from EsproMusic.utils.logger import play_logs
-from EsproMusic.utils.stream.stream import stream
+from MoonMuzic.utils.logger import play_logs
+from MoonMuzic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -661,3 +661,4 @@ async def slider_queries(client, CallbackQuery, _):
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
         )
+
