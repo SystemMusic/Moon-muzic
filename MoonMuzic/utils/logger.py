@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from EsproMusic import app
-from EsproMusic.utils.database import is_on_off
+from MoonMuzic import app
+from MoonMuzic.utils.database import is_on_off
 from config import LOGGER_ID
 
 
