@@ -1,8 +1,8 @@
 import random
 from typing import Dict, List, Union
 
-from EsproMusic import userbot
-from EsproMusic.core.mongo import mongodb
+from MoonMuzic import userbot
+from MoonMuzic.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
@@ -644,3 +644,4 @@ async def remove_banned_user(user_id: int):
     if not is_gbanned:
         return
     return await blockeddb.delete_one({"user_id": user_id})
+
