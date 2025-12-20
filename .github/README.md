@@ -1,5 +1,5 @@
 <h2 align="center">
-    𝐄𝗌ρ𝗋ⱺ 𝐌ᥙsiᥴ [ ɴᴏ ᴀᴅʂ ] 🕊
+    Moon Muzic 🕊
 </h2>
 
 <p align="center">
@@ -135,6 +135,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 </details>
 
 - <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴛᴇᴀᴍ ʏᴜᴋᴋɪ](https://github.com/TeamYukki) ғᴏʀ [ʏᴜᴋᴋɪ ᴍᴜsɪᴄ ʙᴏᴛ](https://github.com/TeamYukki/YukkiMusicBot)_ </b>
+
 
 
 
