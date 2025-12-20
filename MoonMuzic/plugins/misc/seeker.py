@@ -1,7 +1,7 @@
 import asyncio
 
-from EsproMusic.misc import db
-from EsproMusic.utils.database import get_active_chats, is_Music_playing
+from MoonMuzic.misc import db
+from MoonMuzic.utils.database import get_active_chats, is_Music_playing
 
 
 async def timer():
@@ -22,3 +22,4 @@ async def timer():
 
 
 asyncio.create_task(timer())
+
