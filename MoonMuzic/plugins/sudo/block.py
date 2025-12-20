@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.database import add_gban_user, remove_gban_user
-from EsproMusic.utils.decorators.language import language
-from EsproMusic.utils.extraction import extract_user
+from MoonMuzic import app
+from MoonMuzic.misc import SUDOERS
+from MoonMuzic.utils.database import add_gban_user, remove_gban_user
+from MoonMuzic.utils.decorators.language import language
+from MoonMuzic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
@@ -57,3 +57,4 @@ async def sudoers_list(client, message: Message, _):
         return await mystic.edit_text(_["block_5"])
     else:
         return await mystic.edit_text(msg)
+
