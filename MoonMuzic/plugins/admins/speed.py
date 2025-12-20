@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.core.call import Loy
-from EsproMusic.misc import SUDOERS, db
-from EsproMusic.utils import AdminRightsCheck
-from EsproMusic.utils.database import is_active_chat, is_nonadmin_chat
-from EsproMusic.utils.decorators.language import languageCB
-from EsproMusic.utils.inline import close_markup, speed_markup
+from MoonMuzic import app
+from MoonMuzic.core.call import Loy
+from MoonMuzic.misc import SUDOERS, db
+from MoonMuzic.utils import AdminRightsCheck
+from MoonMuzic.utils.database import is_active_chat, is_nonadmin_chat
+from MoonMuzic.utils.decorators.language import languageCB
+from MoonMuzic.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
@@ -110,3 +110,4 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_34"].format(speed, CallbackQuery.from_user.mention),
         reply_markup=close_markup(_),
     )
+
