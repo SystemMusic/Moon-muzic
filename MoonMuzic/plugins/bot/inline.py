@@ -5,8 +5,8 @@ from pyrogram.types import (
 )
 from youtubesearchpython.__future__ import VideosSearch
 
-from EsproMusic import app
-from EsproMusic.utils.inlinequery import answer
+from MoonMuzic import app
+from MoonMuzic.utils.inlinequery import answer
 from config import BANNED_USERS
 
 
@@ -66,3 +66,4 @@ async def inline_query_handler(client, query):
             return await client.answer_inline_query(query.id, results=answers)
         except:
             return
+
