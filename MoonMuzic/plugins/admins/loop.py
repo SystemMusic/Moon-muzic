@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.utils.database import get_loop, set_loop
-from EsproMusic.utils.decorators import AdminRightsCheck
-from EsproMusic.utils.inline import close_markup
+from MoonMuzic import app
+from MoonMuzic.utils.database import get_loop, set_loop
+from MoonMuzic.utils.decorators import AdminRightsCheck
+from MoonMuzic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -44,3 +44,4 @@ async def admins(cli, message: Message, _, chat_id):
         )
     else:
         return await message.reply_text(usage)
+
