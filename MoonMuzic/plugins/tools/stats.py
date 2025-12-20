@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from EsproMusic import app
-from EsproMusic.core.userbot import assistants
-from EsproMusic.misc import SUDOERS, mongodb
-from EsproMusic.plugins import ALL_MODULES
-from EsproMusic.utils.database import get_served_chats, get_served_users, get_sudoers
-from EsproMusic.utils.decorators.language import language, languageCB
-from EsproMusic.utils.inline.stats import back_stats_buttons, stats_buttons
+from MoonMuzic import app
+from MoonMuzic.core.userbot import assistants
+from MoonMuzic.misc import SUDOERS, mongodb
+from MoonMuzic.plugins import ALL_MODULES
+from MoonMuzic.utils.database import get_served_chats, get_served_users, get_sudoers
+from MoonMuzic.utils.decorators.language import language, languageCB
+from MoonMuzic.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
@@ -133,3 +133,4 @@ async def bot_stats(client, CallbackQuery, _):
         await CallbackQuery.message.reply_photo(
             photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
         )
+
