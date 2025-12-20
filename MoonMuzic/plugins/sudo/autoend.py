@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.database import autoend_off, autoend_on
+from MoonMuzic import app
+from MoonMuzic.misc import SUDOERS
+from MoonMuzic.utils.database import autoend_off, autoend_on
 
 
 @app.on_message(filters.command("autoend") & SUDOERS)
@@ -22,3 +22,4 @@ async def auto_end_stream(_, message: Message):
         await message.reply_text("» ᴀᴜᴛᴏ ᴇɴᴅ sᴛʀᴇᴀᴍ ᴅɪsᴀʙʟᴇᴅ.")
     else:
         await message.reply_text(usage)
+
