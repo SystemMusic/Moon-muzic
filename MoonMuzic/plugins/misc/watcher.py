@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.core.call import Loy
+from MoonMuzic import app
+from MoonMuzic import Loy
 
 welcome = 20
 close = 30
@@ -12,3 +12,4 @@ close = 30
 @app.on_message(filters.video_chat_ended, group=close)
 async def welcome(_, message: Message):
     await Loy.stop_stream_force(message.chat.id)
+
