@@ -5,12 +5,12 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from EsproMusic import app
-from EsproMusic.core.call import Loy
-from EsproMusic.misc import db
-from EsproMusic.utils.database import get_assistant, get_authuser_names, get_cmode
-from EsproMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from EsproMusic.utils.formatters import alpha_to_int, get_readable_time
+from MoonMuzic import app
+from MoonMuzic.core.call import Loy
+from MoonMuzic.misc import db
+from MoonMuzic.utils.database import get_assistant, get_authuser_names, get_cmode
+from MoonMuzic.utils.decorators import ActualAdminCB, AdminActual, language
+from MoonMuzic import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}
@@ -123,3 +123,4 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
         except:
             return await CallbackQuery.answer(_["tg_8"], show_alert=True)
     await CallbackQuery.answer(_["tg_9"], show_alert=True)
+
