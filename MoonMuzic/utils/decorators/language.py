@@ -1,7 +1,7 @@
 from strings import get_string
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
+from MoonMuzic import app
+from MoonMuzic.misc import SUDOERS
 from config import SUPPORT_CHAT
 from EsproMusic.utils.database import get_lang, is_maintenance
 
