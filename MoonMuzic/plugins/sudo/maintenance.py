@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.database import (
+from MoonMuzic import app
+from MoonMuzic.misc import SUDOERS
+from MoonMuzic.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
@@ -37,3 +37,4 @@ async def maintenance(client, message: Message):
             await message.reply_text(_["maint_5"])
     else:
         await message.reply_text(usage)
+
