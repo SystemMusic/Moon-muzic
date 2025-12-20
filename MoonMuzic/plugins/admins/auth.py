@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.utils import extract_user, int_to_alpha
-from EsproMusic.utils.database import (
+from MoonMuzic import app
+from MoonMuzic.utils import extract_user, int_to_alpha
+from MoonMuzic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from EsproMusic.utils.decorators import AdminActual, language
-from EsproMusic.utils.inline import close_markup
+from MoonMuzic.utils.decorators import AdminActual, language
+from MoonMuzic import close_markup
 from config import BANNED_USERS, adminlist
 
 
@@ -87,3 +87,4 @@ async def authusers(client, message: Message, _):
             text += f"{j}➤ {user}[<code>{user_id}</code>]\n"
             text += f"   {_['auth_8']} {admin_name}[<code>{admin_id}</code>]\n\n"
         await mystic.edit_text(text, reply_markup=close_markup(_))
+
