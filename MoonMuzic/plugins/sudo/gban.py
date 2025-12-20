@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils import get_readable_time
-from EsproMusic.utils.database import (
+from MoonMuzic import app
+from MoonMuzic import SUDOERS
+from MoonMuzic.utils import get_readable_time
+from MoonMuzic.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -15,8 +15,8 @@ from EsproMusic.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from EsproMusic.utils.decorators.language import language
-from EsproMusic.utils.extraction import extract_user
+from MoonMuzic import language
+from MoonMuzic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
@@ -123,3 +123,4 @@ async def gbanned_list(client, message: Message, _):
         return await mystic.edit_text(_["gban_10"])
     else:
         return await mystic.edit_text(msg)
+
