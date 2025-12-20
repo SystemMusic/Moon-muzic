@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from EsproMusic import YouTube, app
-from EsproMusic.core.call import Loy
-from EsproMusic.misc import db
-from EsproMusic.utils.database import get_loop
-from EsproMusic.utils.decorators import AdminRightsCheck
-from EsproMusic.utils.inline import close_markup, stream_markup
-from EsproMusic.utils.stream.autoclear import auto_clean
-from EsproMusic.utils.thumbnails import get_thumb
+from MoonMuzic import YouTube, app
+from MoonMuzic.core.call import Loy
+from MoonMuzic.misc import db
+from MoonMuzic.utils.database import get_loop
+from MoonMuzic.utils.decorators import AdminRightsCheck
+from MoonMuzic.utils.inline import close_markup, stream_markup
+from MoonMuzic.utils.stream.autoclear import auto_clean
+from MoonMuzic.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -230,3 +230,4 @@ async def skip(cli, message: Message, _, chat_id):
             )
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "stream"
+
