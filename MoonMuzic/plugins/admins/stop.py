@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.core.call import Loy
-from EsproMusic.utils.database import set_loop
-from EsproMusic.utils.decorators import AdminRightsCheck
-from EsproMusic.utils.inline import close_markup
+from MoonMuzic import app
+from MoonMuzic.core.call import Loy
+from MoonMuzic.utils.database import set_loop
+from MoonMuzic.utils.decorators import AdminRightsCheck
+from MoonMuzic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -21,3 +21,4 @@ async def stop_Music(cli, message: Message, _, chat_id):
     await message.reply_text(
         _["admin_5"].format(message.from_user.mention), reply_markup=close_markup(_)
     )
+
