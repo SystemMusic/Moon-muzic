@@ -53,7 +53,7 @@ xm
 
 - Clone the repositobury by :
 
-`git clone https://github.com/TeamEspro/EsproMusicBot && cd EsproMusicBot`
+`git clone https://github.com/Moon-Muzic/MoonMuzic && cd EsproMusicBot`
 
 - Install requirements by :
 
@@ -135,6 +135,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 </details>
 
 - <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴛᴇᴀᴍ ʏᴜᴋᴋɪ](https://github.com/TeamYukki) ғᴏʀ [ʏᴜᴋᴋɪ ᴍᴜsɪᴄ ʙᴏᴛ](https://github.com/TeamYukki/YukkiMusicBot)_ </b>
+
 
 
 
