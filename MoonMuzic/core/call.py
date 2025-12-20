@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from EsproMusic import LOGGER, YouTube, app
-from EsproMusic.misc import db
-from EsproMusic.utils.database import (
+from MoonMuzic import LOGGER, YouTube, app
+from MoonMuzic.misc import db
+from MoonMuzic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from EsproMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from EsproMusic.utils.exceptions import AssistantErr
-from EsproMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from EsproMusic.utils.inline.play import stream_markup
-from EsproMusic.utils.stream.autoclear import auto_clean
-from EsproMusic.utils.thumbnails import get_thumb
+from MoonMuzic.utils.exceptions import AssistantErr
+from MoonMuzic.utils.formatters import check_duration, seconds_to_min, speed_converter
+from MoonMuzic.utils.inline.play import stream_markup
+from MoonMuzic.utils.stream.autoclear import auto_clean
+from MoonMuzic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
