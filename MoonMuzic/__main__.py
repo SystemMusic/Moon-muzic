@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from EsproMusic import LOGGER, app, userbot
-from EsproMusic.core.call import Loy
-from EsproMusic.misc import sudo
-from EsproMusic.plugins import ALL_MODULES
-from EsproMusic.utils.database import get_banned_users, get_gbanned
+from MoonMuzic import LOGGER, app, userbot
+from MoonMuzic.core.call import Loy
+from MoonMuzic.misc import sudo
+from MoonMuzic.plugins import ALL_MODULES
+from MoonMuzic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,14 +35,14 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("EsproMusic.plugins" + all_module)
-    LOGGER("EsproMusic.plugins").info("Successfully Imported Modules...")
+        MoonMuzic" + all_module)
+    MoonMuzic Imported Modules...")
     await userbot.start()
     await Loy.start()
     try:
         await Loy.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("EsproMusic").error(
+        MoonMuzic(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
         )
         exit()
