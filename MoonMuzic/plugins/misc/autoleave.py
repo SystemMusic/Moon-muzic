@@ -4,9 +4,9 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from EsproMusic import app
-from EsproMusic.core.call import Loy, autoend
-from EsproMusic.utils.database import get_client, is_active_chat, is_autoend
+from MoonMuzic import app
+from MoonMuzic.core.call import Loy, autoend
+from MoonMuzic.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
@@ -72,3 +72,4 @@ async def auto_end():
 
 
 asyncio.create_task(auto_end())
+
