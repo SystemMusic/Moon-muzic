@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.core.call import Loy
-from EsproMusic.utils import bot_sys_stats
-from EsproMusic.utils.decorators.language import language
-from EsproMusic.utils.inline import supp_markup
+from MoonMuzic import app
+from MoonMuzic.core.call import Loy
+from MoonMuzic.utils import bot_sys_stats
+from MoonMuzic.utils.decorators.language import language
+from MoonMuzic.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
@@ -26,3 +26,4 @@ async def ping_com(client, message: Message, _):
         _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK, pytgping),
         reply_markup=supp_markup(_),
     )
+
