@@ -25,9 +25,9 @@ from EsproMusic.utils.database import (
     skip_off,
     skip_on,
 )
-from EsproMusic.utils.decorators.admins import ActualAdminCB
-from EsproMusic.utils.decorators.language import language, languageCB
-from EsproMusic.utils.inline.settings import (
+from MoonMuzic.utils.decorators.admins import ActualAdminCB
+from MoonMuzic.utils.decorators.language import language, languageCB
+from MoonMuzic.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
@@ -389,3 +389,4 @@ async def vote_change(client, CallbackQuery, _):
         )
     except MessageNotModified:
         return
+
