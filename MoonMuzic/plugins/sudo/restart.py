@@ -10,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from EsproMusic import app
-from EsproMusic.misc import HAPP, SUDOERS, XCB
-from EsproMusic.utils.database import (
+from MoonMuzic import app
+from MoonMuzic.misc import HAPP, SUDOERS, XCB
+from MoonMuzic.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from EsproMusic.utils.decorators.language import language
-from EsproMusic.utils.pastebin import LoyBin
+from MoonMuzic.utils.decorators.language import language
+from MoonMuzic.utils.pastebin import LoyBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -135,3 +135,4 @@ async def restart_(_, message):
         "» ʀᴇsᴛᴀʀᴛ ᴘʀᴏᴄᴇss sᴛᴀʀᴛᴇᴅ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ sᴛᴀʀᴛs..."
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
+
