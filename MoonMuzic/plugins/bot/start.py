@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from EsproMusic import app
-from EsproMusic.misc import _boot_
-from EsproMusic.plugins.sudo.sudoers import sudoers_list
-from EsproMusic.utils.database import (
+from MoonMuzic import app
+from MoonMuzic.misc import _boot_
+from MoonMuzic.plugins.sudo.sudoers import sudoers_list
+from MoonMuzic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -17,9 +17,9 @@ from EsproMusic.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from EsproMusic.utils.decorators.language import LanguageStart
-from EsproMusic.utils.formatters import get_readable_time
-from EsproMusic.utils.inline import help_pannel, private_panel, start_panel
+from MoonMuzic.utils.decorators.language import LanguageStart
+from MoonMuzic.utils.formatters import get_readable_time
+from MoonMuzic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
@@ -150,3 +150,4 @@ async def welcome(client, message: Message):
                 await message.stop_propagation()
         except Exception as ex:
             print(ex)
+
