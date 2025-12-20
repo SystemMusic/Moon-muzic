@@ -4,17 +4,17 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.database import (
+from MoonMuzic import app
+from MoonMuzic import SUDOERS
+from MoonMuzic.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from EsproMusic.utils.decorators.language import language
-from EsproMusic.utils.formatters import alpha_to_int
+from MoonMuzic.utils.decorators.language import language
+from MoonMuzic.utils.formatters import alpha_to_int
 from config import adminlist
 
 
@@ -168,3 +168,4 @@ async def auto_clean():
 
 
 asyncio.create_task(auto_clean())
+
