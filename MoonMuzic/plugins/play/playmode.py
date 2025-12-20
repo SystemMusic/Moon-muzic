@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from EsproMusic import app
-from EsproMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from EsproMusic.utils.decorators import language
-from EsproMusic.utils.inline.settings import playmode_users_markup
+from MoonMuzic import app
+from MoonMuzic import get_playmode, get_playtype, is_nonadmin_chat
+from MoonMuzic.utils.decorators import language
+from MoonMuzic.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
@@ -31,3 +31,4 @@ async def playmode_(client, message: Message, _):
         _["play_22"].format(message.chat.title),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
+
