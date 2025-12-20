@@ -4,9 +4,9 @@ import speedtest
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.misc import SUDOERS
-from EsproMusic.utils.decorators.language import language
+from MoonMuzic import app
+from MoonMuzic import SUDOERS
+from MoonMuzic.utils.decorators.language import language
 
 
 def testspeed(m, _):
@@ -43,3 +43,4 @@ async def speedtest_function(client, message: Message, _):
     )
     msg = await message.reply_photo(photo=result["share"], caption=output)
     await m.delete()
+
