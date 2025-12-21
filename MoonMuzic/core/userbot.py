@@ -11,35 +11,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="EsproAss1",
+            name="MoonAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="EsproAss2",
+            name="MoonAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="EsproAss3",
+            name="MoonAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="EsproAss4",
+            name="MoonAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="EsproAss5",
+            name="MoonAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -72,8 +72,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("EsproSupport")
-                await self.two.join_chat("EsproUpdate")
+                await self.two.join_chat("MoonSupport")
+                await self.two.join_chat("MoonUpdate")
             except:
                 pass
             assistants.append(2)
@@ -114,8 +114,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("EsproSupport")
-                await self.four.join_chat("EsproUpdate")
+                await self.four.join_chat("MoonSupport")
+                await self.four.join_chat("MoonUpdate")
             except:
                 pass
             assistants.append(4)
@@ -135,8 +135,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("EsproSupport")
-                await self.five.join_chat("EsproUpdate")
+                await self.five.join_chat("MoonSupport")
+                await self.five.join_chat("MoonUpdate")
             except:
                 pass
             assistants.append(5)
